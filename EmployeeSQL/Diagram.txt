@@ -1,0 +1,57 @@
+# SQL Homework
+# UT-TOR-DATA-PT-01-2020-U-C Assignment #9
+# (c) Boris Smirnov
+
+Departments as d
+----------------
+dept_no CHAR(4) PK
+dept_name VARCHAR(20)
+
+Employees as e
+--------------
+emp_no INT PK
+birth_date DATE
+first_name VARCHAR(30)
+last_name VARCHAR(30)
+gender CHAR(1)
+hire_date DATE
+
+Dept_managers as dm
+-------------------
+# every department had several managers (one at a time)
+# each manager managed only one department
+dept_no CHAR(4) FK >- d.dept_no
+# every manager is an employee
+# employee may be a amnager or may be not
+emp_no int FK 0- e.emp_no
+from_date DATE
+to_date DATE
+
+Dept_emp as de
+--------------
+# every department employee is company employee
+# there are employees who worked for more then one department
+emp_no INT FK >- e.emp_no
+# every departmnet has many employees
+# there are employees who worked in more then one department
+dept_no CHAR(4) FK >-< d.dept_no
+from_date DATE
+to_date DATE
+
+Titles as t
+-----------
+# an employee may have many titles (one at a time)
+# every title have many employees
+emp_no INT FK >-< e.emp_no
+title VARCHAR(30)
+from_date DATE
+to_date DATE
+
+Salaries as s
+-------------
+# every salary was paid to one employee
+# every employee was paid salary one or more times
+emp_no INT FK >- e.emp_no
+salary INT
+from_date DATE
+to_date DATE
