@@ -31,11 +31,11 @@ Dept_emp as de
 --------------
 # every department employee is company employee
 # there are employees who worked for more then one department
-emp_no INT FK >- e.emp_no
+emp_no INT PK FK >- e.emp_no
 # every departmnet has many employees
 # there are employees who worked in more then one department
 dept_no CHAR(4) FK >-< d.dept_no
-from_date DATE
+from_date DATE PK
 to_date DATE
 
 Titles as t
