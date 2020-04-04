@@ -2,6 +2,8 @@
 
 
 UT-TOR-DATA-PT-01-2020-U-C Week 10 Assignment
+
+
 (c) Boris Smirnov
 
 
@@ -364,8 +366,8 @@ order by "Frequency" desc;
 ## Bonus
 
 
-Bonus part was implemented in **Bonus.ipynb**. It requires **dbconfig.py** that should have following _user_ and _password_ variables
-for connection to local PostgreSQL server.
+Bonus part was implemented in **Bonus.ipynb**. It requires **dbconfig.py** that should have _user_ and _password_ variables
+for connecting to local PostgreSQL server.
 
 
 ## Epilogue
