@@ -107,7 +107,7 @@ CREATE TABLE Titles (
 
 
 CREATE TABLE Salaries (
-    emp_no INT   NOT NULL   PRIMARY KEY,
+    emp_no INT   NOT NULL,
     salary INT   NOT NULL,
     from_date DATE   NOT NULL,
     to_date DATE   NOT NULL,
