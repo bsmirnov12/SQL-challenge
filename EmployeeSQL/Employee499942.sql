@@ -14,4 +14,4 @@ left join Dept_emp as de on e.emp_no = de.emp_no
 left join Departments as d on de.dept_no = d.dept_no
 left join Titles as t on e.emp_no = t.emp_no
 left join Salaries as s on e.emp_no = s.emp_no
-where e.emp_no = 499942
+where e.emp_no = 499942;

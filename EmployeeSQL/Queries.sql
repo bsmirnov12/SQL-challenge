@@ -50,7 +50,7 @@ left join Departments as d on dm.dept_no = d.dept_no;
 --  a. employees can change departments -> I'll choose only the last department where an employee worked
 --  b. there is at least on employee (id:21076, I think there were 29 of them) who started to work in two different
 --     departments at the same time but finished at different dates. For such cases I'll choose the last department
---     such an employee worked in (and hope those end times deffer for each department, which is in fact the case)
+--     an employee worked in (and hope those end times deffer for each department, which in fact is the case)
 --  c. by the date this database was last actualized some employees had left the company (and hence a department
 --     where they worked), others were still employed. The later employees have their 'to_date' field set to '9999-01-01'
 --     but the former have actual date when they left the job (59900 of them).
